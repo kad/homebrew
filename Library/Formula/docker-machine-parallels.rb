@@ -5,7 +5,7 @@ class DockerMachineParallels < Formula
   homepage "https://github.com/Parallels/docker-machine-parallels"
   url "https://github.com/Parallels/docker-machine-parallels/archive/v1.1.1.tar.gz"
   sha256 "a085bbc8c231f4629d3404677f73b49bff2414f7002f0e9acf9aee8cdae15829"
-  revision 1
+  revision 2
 
   head "https://github.com/Parallels/docker-machine-parallels.git"
 
@@ -22,15 +22,15 @@ class DockerMachineParallels < Formula
   depends_on "docker-machine"
 
   go_resource "github.com/docker/docker" do
-    url "https://github.com/docker/docker.git", :tag => "v1.9.1", :revision => "a34a1d598c6096ed8b5ce5219e77d68e5cd85462"
+    url "https://github.com/docker/docker.git", :tag => "v1.10.3", :revision => "20f81dde9bd97c86b2d0e33bbbf1388018611929"
   end
 
   go_resource "github.com/docker/machine" do
-    url "https://github.com/docker/machine.git", :tag => "v0.5.5", :revision => "02c4254cb4c93a4bbb5dc4ca0467abeb12d72546"
+    url "https://github.com/docker/machine.git", :tag => "v0.6.0", :revision => "e27fb87286cb8e7454183ce46a6e1e84b31965e9"
   end
 
   go_resource "golang.org/x/crypto" do
-    url "https://go.googlesource.com/crypto.git", :revision => "f18420efc3b4f8e9f3d51f6bd2476e92c46260e9"
+    url "https://go.googlesource.com/crypto.git", :revision => "5dc8cb4b8a8eb076cbb5a06bc3b8682c15bdbbd3"
   end
 
   go_resource "github.com/codegangsta/cli" do
